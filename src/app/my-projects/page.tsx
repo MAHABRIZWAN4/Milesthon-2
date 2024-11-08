@@ -7,7 +7,7 @@ import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 import { RxArrowTopRight } from "react-icons/rx";
 import Particle from "../Components/Particle";
-import { ServiceData } from "../data/serviceData";
+import { ServiceData } from "@/app/serviceData";
 
 export default function ProjectCard() {
   return (
