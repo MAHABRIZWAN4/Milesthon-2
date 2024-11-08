@@ -1,6 +1,5 @@
 "use client";
 import { useRef } from "react";
-import Link from "next/link";
 
 export default function ContactMe() {
   // Audio reference with type

@@ -2,7 +2,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AiOutlineHome, AiOutlineUser, AiOutlineAppstore, AiOutlineDelete } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineUser, AiOutlineAppstore} from "react-icons/ai";
 
 import { FaCode } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';

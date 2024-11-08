@@ -1,8 +1,6 @@
 "use clients"
 import React from "react";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
-import { initialize } from "next/dist/server/lib/render-server";
 
 
 
