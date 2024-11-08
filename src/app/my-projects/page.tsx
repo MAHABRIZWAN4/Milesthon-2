@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -7,46 +7,7 @@ import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 import { RxArrowTopRight } from "react-icons/rx";
 import Particle from "../Components/Particle";
-
-// CARD DATA
-export const ServiceData = [
-  {
-    title: "ATM MACHINE",
-    content: "A student registration form collects personal details, contact information, and educational background for enrollment.",
-    BackgroundImage: "/ATM3.PNG",
-    link: "https://student-registration-form--bice.vercel.app/"
-  },
-  {
-    title: "ADVENTURE GAME",
-    content: "A TypeScript adventure game with exciting exploration and dynamic character interactions.",
-    BackgroundImage: "/AG.png",
-    link: "https://github.com/MAHABRIZWAN4/Adventure-Game"
-  },
-  {
-    title: "CURRENCY CONVERTOR",
-    content: "A TypeScript-based currency converter that quickly converts between multiple currencies with up-to-date exchange rates.",
-    BackgroundImage: "/CurrencyConvertor.png",
-    link: "https://github.com/MAHABRIZWAN4/Currency-converter"
-  },
-  {
-    title: "AGE CALCULATOR",
-    content: "An age calculator that quickly computes your age from the given date of birth.",
-    BackgroundImage: "/age22.jpg",
-    link: "https://github.com/MAHABRIZWAN4/Project-Age-Calculator"
-  },
-  {
-    title: "NUMBER GUESSING GAME",
-    content: "A fun number guessing game where players try to guess a randomly selected number within a set range.",
-    BackgroundImage: "/number1.png",
-    link: "https://github.com/MAHABRIZWAN4/cli-number-guessing-game"
-  },
-  {
-    title: "OOP_MY BANK",
-    content: "MyBank is an OOP-based banking system where users can create accounts, check balances, deposit, and withdraw funds securely.",
-    BackgroundImage: "/oopMyBank.JPG",
-    link: "https://github.com/MAHABRIZWAN4/OOP_MyBank"
-  },
-];
+import { ServiceData } from "../data/serviceData";
 
 export default function ProjectCard() {
   return (
@@ -74,7 +35,7 @@ export default function ProjectCard() {
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <Link href={item.link} target="" passHref>
+            <Link href={item.link} target="_blank" passHref>
               <div className="flex flex-col gap-6 mb-10 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[350px] lg:w-[300px] overflow-hidden cursor-pointer">
                 {/* Background */}
                 <div
